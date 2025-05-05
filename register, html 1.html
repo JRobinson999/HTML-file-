@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice Lessons Registration Form</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        html, body {
+            min-height: 100%;
+        }
+        body, div, form, input, select, textarea, label { 
+            padding: 0;
+            margin: 0;
+            font-family: Roboto, Arial, sans-serif;
+            font-size: 14px;
+            color: #666;
+            line-height: 22px;
+        }
+        h1 {
+            position: absolute;
+            margin: 0;
+            font-size: 35px;
+            color: #ffffff;
+            z-index: 2;
+            line-height: 83px;
+        }
+        .testbox {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: inherit;
+            padding: 20px;
+        }
+        form {
+            width: 95%;
+            padding: 20px;
+            border-radius: 6px;
+            background: #ffffff;
+            box-shadow: 0 0 8px  #00b4cc; 
+        }
+        .banner {
+            position: relative;
+            height: 300px;
+            background-image: url("/uploads/media/default/0001/02/234656e7acbca4625305dd37e7344af8eff32383.jpeg");  
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .banner::after {
+            content: "";
+            background-color: rgba(0, 0, 0, 0.2); 
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+        input, select, textarea {
+            margin-bottom: 10px;
+            border: 1px solid #cccccc;
+            border-radius: 3px;
+            transition: border-color 0.3s, box-shadow 0.3s;
+        }
+        input {
+            width: calc(95% - 10px);
+            padding: 5px;
+        }
+        input[type="date"] {
+            padding: 4px 5px;
+        }
+        textarea {
+            width: calc(100% - 12px);
+            padding: 5px;
+        }
+        .item:hover input {
+            border-color: #00cccc;
+            box-shadow: 0 0 3px 0 #00cccc;
+        }
+        .item {
+            position: relative;
+            margin: 10px 0;
+        }
+        .btn-block {
+            margin-top: 10px;
+            text-align: center;
+        }
+        button {
+            width: 150px;
+            padding: 10px;
+            border: none;
+            border-radius: 5px; 
+            background: #cc7a00;
+            font-size: 16px;
+            color: #fff;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background: #00ffaa;
+        }
+        @media (min-width: 568px) {
+            .name-item, .city-item {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+            .name-item input, .name-item div {
+                width: calc(50% - 20px);
+            }
+            .name-item div input {
+                width:97%;
+            }
+            .name-item div label {
+                display:block;
+                padding-bottom:5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="testbox">
+        <form action="/" method="POST">
+            <div class="banner">
+                <h1>Voice Lessons Registration Form</h1>
+            </div>
+            <p>Fill out the form below to register for voice lessons.</p>
+            <div class="item">
+                <label for="name">Name<span>*</span></label>
+                <input id="name" type="text" name="name" required/>
+            </div>
+            <div class="item">
+                <label for="email">Email Address<span>*</span></label>
+                <input id="email" type="email" name="email" required/>
+            </div>
+            <div class="item">
+                <label for="address">Address<span>*</span></label>
+                <input id="address" type="text" name="address" required/>
+            </div>
+            <div class="item">
+                <label for="city">City<span>*</span></label>
+                <input id="city" type="text" name="city" required/>
+            </div>
+            <div class="item">
+                <label for="state">State<span>*</span></label>
+                <input id="state" type="text" name="state" required/>
+            </div>
+            <div class="item">
+                <label for="zip">Zip<span>*</span></label>
+                <input id="zip" type="text" name="zip" required/>
+            </div>
+            <div class="item">
+                <label for="phone">Phone<span>*</span></label>
+                <input id="phone" type="tel" name="phone" required/>
+            </div>
+            <div class="item">
+                <label for="bdate">Date of Birth<span>*</span></label>
+                <input id="bdate" type="date" name="bdate" required/>
+            </div>
+            <div class="question">
+                <label>Gender</label>
+                <div class="question-answer">
+                    <div>
+                        <input type="radio" value="male" id="radio_1" name="gender" required/>
+                        <label for="radio_1" class="radio"><span>Male</span></label>
+                    </div>
+                    <div>
+                        <input type="radio" value="female" id="radio_2" name="gender" required/>
+                        <label for="radio_2" class="radio"><span>Female</span></label>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <label for="experience">Previous Singing Experience:</label>
+                <textarea id="experience" name="experience"></textarea>
+            </div>
+            <div class="btn-block">
+                <button type="submit">SUBMIT</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
