@@ -1,0 +1,8 @@
+<meta property="og:image" content="https&#x3A;&#x2F;&#x2F;primary.jwwb.nl&#x2F;pexels&#x2F;88&#x2F;8834016.jpeg&#x3F;enable-io&#x3D;true&amp;enable&#x3D;upscale&amp;fit&#x3D;bounds&amp;width&#x3D;1200">
+                    <meta property="og:image" content="https&#x3A;&#x2F;&#x2F;primary.jwwb.nl&#x2F;pexels&#x2F;15&#x2F;15801861.jpeg&#x3F;enable-io&#x3D;true&amp;enable&#x3D;upscale&amp;fit&#x3D;bounds&amp;width&#x3D;1200">
+                                    <meta name="twitter:card" content="summary_large_image">
+                        <meta property="twitter:image" content="https&#x3A;&#x2F;&#x2F;primary.jwwb.nl&#x2F;pexels&#x2F;67&#x2F;6785042.jpeg&#x3F;enable-io&#x3D;true&amp;enable&#x3D;upscale&amp;fit&#x3D;bounds&amp;width&#x3D;1200">
+                                        <link
+                rel="alternate"
+                hreflang="en-GB"
+                href="https://www.enchanted-beauty.net/"
